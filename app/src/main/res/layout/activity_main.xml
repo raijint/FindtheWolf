@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='The goal of the game is to find the real wolf who hiden between the villigers. You may click on image to find the real wolf. You may also click "Play Again" to restart.'
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ImageView"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:contentDescription="villager1"
+                app:srcCompat="@drawable/cunmin" />
+
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:contentDescription="villager2"
+                app:srcCompat="@drawable/cunmin2" />
+
+            <ImageView
+                android:id="@+id/ImageView3"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:contentDescription="villager3"
+                app:srcCompat="@drawable/cunmin3" />
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:contentDescription="villager4"
+                app:srcCompat="@drawable/cunmin4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ImageView6"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:contentDescription="villager5"
+                app:srcCompat="@drawable/cunmin" />
+
+            <ImageView
+                android:id="@+id/ImageView7"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:contentDescription="villager6"
+                app:srcCompat="@drawable/cunmin2" />
+
+            <ImageView
+                android:id="@+id/ImageView8"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:contentDescription="villager7"
+                app:srcCompat="@drawable/cunmin3" />
+
+            <ImageView
+                android:id="@+id/ImageView9"
+                android:layout_width="92dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:contentDescription="villager8"
+                app:srcCompat="@drawable/cunmin4" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Again"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Play Again" />
+
+        <LinearLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/WolfIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/langrensha" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
