@@ -115,6 +115,14 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/langrensha" />
 
+            <Button
+                android:id="@+id/youtubeb"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:onClick="buttonOnClick"
+                android:text="Watch YouTube Tutorial for game WereWolf" />
+
         </LinearLayout>
 
     </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.niko.findthewolf;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
+    public Button youtubeb;
     private ImageView oriImageView;
     private ImageView oriImageView2;
     private ImageView oriImageView3;
@@ -172,7 +174,10 @@ public class MainActivity extends AppCompatActivity {
         round++;
     }
 
-
+    public void buttonOnClick(View v) {
+        Button youtubeb = (Button) v;
+        startActivity(new Intent(getApplicationContext(), youtubepage.class));
+    }
 
     private void Randomk() {
         for (int i = 0; i < identity.length; i++) {
